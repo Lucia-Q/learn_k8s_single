@@ -3,6 +3,7 @@ site_url: https://Lucia-Q.github.io/learn_k8s_single/
 
 theme:
   name: material
+  language: en           # UI 语言默认英文（Search/Previous/Next 等）
 
 plugins:
   - search
