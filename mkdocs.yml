@@ -3,11 +3,24 @@ site_url: https://Lucia-Q.github.io/learn_k8s_single/
 
 theme:
   name: material
+
 plugins:
   - search
   - i18n:
-      default_language: en
-      docs_structure: suffix
+      docs_structure: suffix        # xxx.md（默认语言）/ xxx.zh.md（中文）
       languages:
-        en: English
-        zh: 简体中文
+        - locale: en
+          name: English
+          default: true             # ← 指定默认语言
+          build: true               # ← 参与构建
+        - locale: zh
+          name: 简体中文
+          build: true               # ← 参与构建
+      nav_translations:
+        zh:
+          Home: 首页
+          Getting started: 快速开始
+
+nav:
+  - Home: index.md
+  - Getting started: getting-started.md

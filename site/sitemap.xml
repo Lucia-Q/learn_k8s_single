@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>https://Lucia-Q.github.io/learn_k8s_single/</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://Lucia-Q.github.io/learn_k8s_single/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://Lucia-Q.github.io/learn_k8s_single/zh/"/>
+    </url>
+    <url>
+        <loc>https://Lucia-Q.github.io/learn_k8s_single/getting-started/</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://Lucia-Q.github.io/learn_k8s_single/getting-started/"/>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://Lucia-Q.github.io/learn_k8s_single/zh/getting-started/"/>
+    </url>
+    <url>
+        <loc>https://Lucia-Q.github.io/learn_k8s_single/zh/</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://Lucia-Q.github.io/learn_k8s_single/zh/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://Lucia-Q.github.io/learn_k8s_single/"/>
+    </url>
+    <url>
+        <loc>https://Lucia-Q.github.io/learn_k8s_single/zh/getting-started/</loc>
+        <lastmod>2025-10-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="zh" href="https://Lucia-Q.github.io/learn_k8s_single/zh/getting-started/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://Lucia-Q.github.io/learn_k8s_single/getting-started/"/>
+    </url>
+</urlset>
