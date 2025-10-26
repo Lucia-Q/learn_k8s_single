@@ -1,1 +1,13 @@
-site_name: My Docs
+site_name: Your Project
+site_url: https://Lucia-Q.github.io/learn_k8s_single/
+
+theme:
+  name: material
+plugins:
+  - search
+  - i18n:
+      default_language: en
+      docs_structure: suffix
+      languages:
+        en: English
+        zh: 简体中文
