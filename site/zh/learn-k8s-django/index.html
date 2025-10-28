@@ -8,19 +8,23 @@
       
       
       
+        <link rel="canonical" href="https://Lucia-Q.github.io/learn_k8s_single/zh/learn-k8s-django/">
+      
+      
+        <link rel="prev" href="../getting-started/">
       
       
       
-      <link rel="icon" href="/learn_k8s_single/assets/images/favicon.png">
+      <link rel="icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>learning k8s</title>
+        <title>case1 - learning k8s</title>
       
     
     
-      <link rel="stylesheet" href="/learn_k8s_single/assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
       
 
@@ -39,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL("/learn_k8s_single/",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +61,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#1k8sdjango" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -69,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="/learn_k8s_single/zh/" title="learning k8s" class="md-header__button md-logo" aria-label="learning k8s" data-md-component="logo">
+    <a href="../" title="learning k8s" class="md-header__button md-logo" aria-label="learning k8s" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -89,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              case1
             
           </span>
         </div>
@@ -110,13 +119,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/learn_k8s_single/learn-k8s-django/" hreflang="en" class="md-select__link">
+            <a href="../../learn-k8s-django/" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/learn_k8s_single/zh/learn-k8s-django/" hreflang="zh" class="md-select__link">
+            <a href="./" hreflang="zh" class="md-select__link">
               简体中文
             </a>
           </li>
@@ -193,7 +202,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/learn_k8s_single/zh/" title="learning k8s" class="md-nav__button md-logo" aria-label="learning k8s" data-md-component="logo">
+    <a href="../" title="learning k8s" class="md-nav__button md-logo" aria-label="learning k8s" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -211,7 +220,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn_k8s_single/zh/" class="md-nav__link">
+      <a href="../" class="md-nav__link">
         
   
   
@@ -233,7 +242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/learn_k8s_single/zh/getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -252,10 +261,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="/learn_k8s_single/zh/learn-k8s-django/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    case1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -266,6 +297,62 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#k8smysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      在k8s中构建mysql数据库
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#django" class="md-nav__link">
+    <span class="md-ellipsis">
+      构建django网页镜像
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learn-k8s-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      备注：此步骤制作的镜像在learn-k8s-django目录下可以找到。
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k8sdjango" class="md-nav__link">
+    <span class="md-ellipsis">
+      在k8s集群上部署django网页
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -287,6 +374,52 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#k8smysql" class="md-nav__link">
+    <span class="md-ellipsis">
+      在k8s中构建mysql数据库
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#django" class="md-nav__link">
+    <span class="md-ellipsis">
+      构建django网页镜像
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#learn-k8s-django" class="md-nav__link">
+    <span class="md-ellipsis">
+      备注：此步骤制作的镜像在learn-k8s-django目录下可以找到。
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#k8sdjango" class="md-nav__link">
+    <span class="md-ellipsis">
+      在k8s集群上部署django网页
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -298,8 +431,105 @@
             <div class="md-content" data-md-component="content">
               <article class="md-content__inner md-typeset">
                 
-  <h1>404 - Not found</h1>
+                  
 
+
+
+<h1 id="1k8sdjango">案例学习1：k8s集群部署django网页</h1>
+<p>前提：
+1.在ubuntu20.04操作系统上完成了k8s的kind集群部署。
+2.kind 集群名称 <code>my-k8s</code></p>
+<p>注意：涉及到的文件已存储在learn-k8s-django目录下。</p>
+<hr />
+<h2 id="k8smysql">在k8s中构建mysql数据库</h2>
+<p>1.首先，导入mysql数据库的镜像。</p>
+<p>2.编写yaml文件：
+具体见sql-k8s.yaml</p>
+<p>3.部署到 Kubernetes
+kubectl apply -f sql-k8s.yaml</p>
+<hr />
+<h2 id="django">构建django网页镜像</h2>
+<p>1.新建django工程</p>
+<p>2.修改工程里的设置：settings.py
+将使用的数据库修改为mysql数据库。</p>
+<pre><code class="language-python">DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        &quot;NAME&quot;: &quot;mytest&quot;,
+        &quot;USER&quot;: &quot;root&quot;,
+        &quot;PASSWORD&quot;: os.environ.get(&quot;MYSQL_ROOT_PASSWORD&quot;),  # 从环境变量获取密码
+        &quot;HOST&quot;: &quot;mysql.storage.svc.cluster.local&quot;,  # MySQL 服务的 DNS 地址
+        &quot;PORT&quot;: &quot;3306&quot;,  # MySQL 默认端口
+        &quot;OPTIONS&quot;: {
+            &quot;charset&quot;: &quot;utf8mb4&quot;, # 使用 utf8mb4 编码支持表情等
+            &quot;init_command&quot;: &quot;SET sql_mode='STRICT_TRANS_TABLES'&quot;
+        },
+    }
+}
+</code></pre>
+<p>4.保存，并在此工程下创建requirements.txt和Dockerfile</p>
+<p>requirements.txt:</p>
+<pre><code class="language-txt">Django==5.0
+mysqlclient==2.2.4
+gunicorn==23.0.0
+</code></pre>
+<p>Dockerfile:</p>
+<pre><code class="language-Dockerfile"># 使用官方 Python 镜像作为基础镜像
+FROM python:3.10-slim
+
+# 设置工作目录
+WORKDIR /app
+
+# 安装构建 mysqlclient 所需的依赖
+RUN apt-get update &amp;&amp; \
+    apt-get install -y --no-install-recommends \
+    build-essential \
+    gcc \
+    pkg-config \
+    libmariadb-dev \
+    libmariadb-dev-compat &amp;&amp; \
+    rm -rf /var/lib/apt/lists/*  # 清理 apt 缓存以减小镜像体积
+
+# 复制当前目录内容到容器
+COPY . /app/
+
+# 安装项目依赖
+RUN pip install --no-cache-dir -r requirements.txt
+
+# 运行数据库迁移并启动 Django 服务
+CMD [&quot;sh&quot;, &quot;-c&quot;, &quot;python manage.py migrate &amp;&amp; gunicorn mysite.wsgi:application -b 0.0.0.0:8000&quot;]
+</code></pre>
+<p>5.构建镜像
+sudo docker build -t my-2025-k8s-single-django-app .</p>
+<p>6.保存镜像
+sudo docker save -o my-2025-k8s-single-django-app.tar my-2025-k8s-single-django-app:latest
+sudo chmod 777 my-2025-k8s-single-django-app.tar</p>
+<h2 id="learn-k8s-django">备注：此步骤制作的镜像在learn-k8s-django目录下可以找到。</h2>
+<h2 id="k8sdjango">在k8s集群上部署django网页</h2>
+<p>1.导入django镜像
+kind load image-archive my-2025-k8s-single-django-app.tar --name my-k8s</p>
+<p>2.编写yaml文件
+具体见django-deployment.yaml</p>
+<p>3.部署到特定命名空间
+kubectl apply -f django-deployment.yaml -n storage
+<img alt="alt text" src="../../image-1.png" /></p>
+<p>4.查看部署情况
+kubectl get pods,svc -n storage -o wide</p>
+<p>5.访问页面：http://172.18.0.3:30000/
+<img alt="alt text" src="../../image.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
               </article>
             </div>
           
@@ -335,10 +565,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "/learn_k8s_single/", "features": [], "search": "/learn_k8s_single/assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
     
     
-      <script src="/learn_k8s_single/assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

@@ -8,23 +8,23 @@
       
       
       
-        <link rel="canonical" href="https://Lucia-Q.github.io/learn_k8s_single/">
+        <link rel="canonical" href="https://Lucia-Q.github.io/learn_k8s_single/learn-k8s-django/">
+      
+      
+        <link rel="prev" href="../getting-started/">
       
       
       
-        <link rel="next" href="getting-started/">
-      
-      
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>learning k8s</title>
+        <title>case1 - learning k8s</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
       
       
 
@@ -43,7 +43,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome" class="md-skip">
+        <a href="#case-study-1-deploying-a-django-web-page-on-a-k8s-cluster" class="md-skip">
           Skip to content
         </a>
       
@@ -78,7 +78,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="learning k8s" class="md-header__button md-logo" aria-label="learning k8s" data-md-component="logo">
+    <a href=".." title="learning k8s" class="md-header__button md-logo" aria-label="learning k8s" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              case1
             
           </span>
         </div>
@@ -119,13 +119,13 @@
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="/learn_k8s_single/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
         
           <li class="md-select__item">
-            <a href="/learn_k8s_single/zh/" hreflang="zh" class="md-select__link">
+            <a href="../zh/learn-k8s-django/" hreflang="zh" class="md-select__link">
               简体中文
             </a>
           </li>
@@ -202,7 +202,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="learning k8s" class="md-nav__button md-logo" aria-label="learning k8s" data-md-component="logo">
+    <a href=".." title="learning k8s" class="md-nav__button md-logo" aria-label="learning k8s" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -217,19 +217,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -240,7 +231,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -252,7 +242,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting-started/" class="md-nav__link">
+      <a href="../getting-started/" class="md-nav__link">
         
   
   
@@ -271,10 +261,32 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="learn-k8s-django/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    case1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -285,6 +297,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#building-a-mysql-database-in-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a MySQL Database in k8s
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-the-django-web-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building the Django Web Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-the-django-web-app-on-the-k8s-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploying the Django Web App on the k8s Cluster
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -309,6 +368,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#building-a-mysql-database-in-k8s" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building a MySQL Database in k8s
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#building-the-django-web-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      Building the Django Web Image
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#deploying-the-django-web-app-on-the-k8s-cluster" class="md-nav__link">
+    <span class="md-ellipsis">
+      Deploying the Django Web App on the k8s Cluster
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -323,8 +417,128 @@
 
 
 
-<h1 id="welcome">Welcome</h1>
-<p>This is the English home page.</p>
+<h1 id="case-study-1-deploying-a-django-web-page-on-a-k8s-cluster">Case Study 1: Deploying a Django Web Page on a k8s Cluster</h1>
+<p><strong>Prerequisites:</strong>
+1. A kind-based k8s cluster has been set up on <strong>Ubuntu 20.04</strong>.
+2. The kind cluster name is <strong><code>my-k8s</code></strong>.</p>
+<p><strong>Note:</strong> All related files are stored under the <code>learn-k8s-django</code> directory.</p>
+<hr />
+<h2 id="building-a-mysql-database-in-k8s">Building a MySQL Database in k8s</h2>
+<ol>
+<li>
+<p>First, import the MySQL image.</p>
+</li>
+<li>
+<p>Write the YAML manifest:<br />
+   See <strong><code>sql-k8s.yaml</code></strong>.</p>
+</li>
+<li>
+<p>Deploy to Kubernetes:</p>
+</li>
+</ol>
+<pre><code class="language-bash">kubectl apply -f sql-k8s.yaml
+</code></pre>
+<hr />
+<h2 id="building-the-django-web-image">Building the Django Web Image</h2>
+<ol>
+<li>
+<p>Create a new Django project.</p>
+</li>
+<li>
+<p>Modify the project settings in <strong><code>settings.py</code></strong> to use MySQL:</p>
+</li>
+</ol>
+<pre><code class="language-python">DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        &quot;NAME&quot;: &quot;mytest&quot;,
+        &quot;USER&quot;: &quot;root&quot;,
+        &quot;PASSWORD&quot;: os.environ.get(&quot;MYSQL_ROOT_PASSWORD&quot;),  # Get password from environment variable
+        &quot;HOST&quot;: &quot;mysql.storage.svc.cluster.local&quot;,          # DNS address of the MySQL Service
+        &quot;PORT&quot;: &quot;3306&quot;,                                     # Default MySQL port
+        &quot;OPTIONS&quot;: {
+            &quot;charset&quot;: &quot;utf8mb4&quot;,                           # Use utf8mb4 to support emojis, etc.
+            &quot;init_command&quot;: &quot;SET sql_mode='STRICT_TRANS_TABLES'&quot;
+        },
+    }
+}
+</code></pre>
+<ol>
+<li>Save the file, then create <strong><code>requirements.txt</code></strong> and <strong><code>Dockerfile</code></strong> in the project directory.</li>
+</ol>
+<p><strong>requirements.txt</strong></p>
+<pre><code class="language-txt">Django==5.0
+mysqlclient==2.2.4
+gunicorn==23.0.0
+</code></pre>
+<p><strong>Dockerfile</strong></p>
+<pre><code class="language-Dockerfile"># Use the official Python image as the base
+FROM python:3.10-slim
+
+# Set working directory
+WORKDIR /app
+
+# Install dependencies required to build mysqlclient
+RUN apt-get update &amp;&amp; \
+    apt-get install -y --no-install-recommends \
+    build-essential \
+    gcc \
+    pkg-config \
+    libmariadb-dev \
+    libmariadb-dev-compat &amp;&amp; \
+    rm -rf /var/lib/apt/lists/*  # Clean apt cache to reduce image size
+
+# Copy current directory into the container
+COPY . /app/
+
+# Install project dependencies
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Run database migrations and start Django via Gunicorn
+CMD [&quot;sh&quot;, &quot;-c&quot;, &quot;python manage.py migrate &amp;&amp; gunicorn mysite.wsgi:application -b 0.0.0.0:8000&quot;]
+</code></pre>
+<ol>
+<li>Build the image:</li>
+</ol>
+<pre><code class="language-bash">sudo docker build -t my-2025-k8s-single-django-app .
+</code></pre>
+<ol>
+<li>Save the image:</li>
+</ol>
+<pre><code class="language-bash">sudo docker save -o my-2025-k8s-single-django-app.tar my-2025-k8s-single-django-app:latest
+sudo chmod 777 my-2025-k8s-single-django-app.tar
+</code></pre>
+<p><strong>Note:</strong> The image produced in this step can be found under the <code>learn-k8s-django</code> directory.</p>
+<hr />
+<h2 id="deploying-the-django-web-app-on-the-k8s-cluster">Deploying the Django Web App on the k8s Cluster</h2>
+<ol>
+<li>Import the Django image into kind:</li>
+</ol>
+<pre><code class="language-bash">kind load image-archive my-2025-k8s-single-django-app.tar --name my-k8s
+</code></pre>
+<ol>
+<li>
+<p>Write the YAML manifest:<br />
+   See <strong><code>django-deployment.yaml</code></strong>.</p>
+</li>
+<li>
+<p>Deploy to the target namespace:</p>
+</li>
+</ol>
+<pre><code class="language-bash">kubectl apply -f django-deployment.yaml -n storage
+</code></pre>
+<p><img alt="alt text" src="../image-1.png" /></p>
+<ol>
+<li>Check the deployment status:</li>
+</ol>
+<pre><code class="language-bash">kubectl get pods,svc -n storage -o wide
+</code></pre>
+<ol>
+<li>Visit the page:</li>
+</ol>
+<pre><code>http://172.18.0.3:30000/
+</code></pre>
+<p><img alt="alt text" src="../image.png" /></p>
 
 
 
@@ -373,10 +587,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
